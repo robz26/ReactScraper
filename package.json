@@ -5,6 +5,7 @@
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "axios": "^0.16.2",
+    "bluebird": "^3.5.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.2.2",
@@ -15,5 +16,21 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "MERN application which scrapes articles and saves them according to user",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robz26/ReactScraper.git"
+  },
+  "keywords": [
+    "nyt"
+  ],
+  "author": "Robin Zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robz26/ReactScraper/issues"
+  },
+  "homepage": "https://github.com/robz26/ReactScraper#readme"
 }
