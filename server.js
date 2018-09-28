@@ -1,9 +1,14 @@
 // Dependecies
-const express = require("express");
-const mongoose = require("mongoose");
-const bluebird = require("bluebird");
-const bodyParser = require("body-parser");
-const path = require("path");
+// const express = require("express");
+import express from 'express'
+// const mongoose = require("mongoose");
+import mongoose from 'mongoose'
+// const bluebird = require("bluebird");
+import bluebird from 'bluebird'
+// const bodyParser = require("body-parser");
+import bodyParser from 'body-parser'
+// const path = require("path");
+import path from 'path'
 
 // Set up a default port, configure mongoose, configure our middleware
 const PORT = process.env.PORT || 3001;
