@@ -1,14 +1,14 @@
 // Dependecies
-// const express = require("express");
-import express from 'express'
-// const mongoose = require("mongoose");
-import mongoose from 'mongoose'
-// const bluebird = require("bluebird");
-import bluebird from 'bluebird'
-// const bodyParser = require("body-parser");
-import bodyParser from 'body-parser'
-// const path = require("path");
-import path from 'path'
+const express = require("express");
+// import express from 'express'
+const mongoose = require("mongoose");
+// import mongoose from 'mongoose'
+const bluebird = require("bluebird");
+// import bluebird from 'bluebird'
+const bodyParser = require("body-parser");
+// import bodyParser from 'body-parser'
+const path = require("path");
+// import path from 'path'
 
 // Set up a default port, configure mongoose, configure our middleware
 const PORT = process.env.PORT || 3001;
@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 // Serve up static assets if in production (running on Heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static("/build"));
 } else {
   app.use(express.static(__dirname + "/public"));
 }
